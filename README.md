@@ -33,7 +33,7 @@ Asegúrate de que docker-compose.yml incluya:
 ```bash
     environment:
       - NODE_ENV=production
-      - GIPHY_API_KEY=5jKLndzAbOuJQUsJbN23ax5tU2lZteH4
+      - GIPHY_API_KEY=api_key
 ```
 Paso 3: Construir y Ejecutar Contenedores
 ```bash

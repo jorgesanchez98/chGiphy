@@ -5,7 +5,7 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=production
-      - GIPHY_API_KEY=5jKLndzAbOuJQUsJbN23ax5tU2lZteH4
+      - GIPHY_API_KEY=your_api_key
     volumes:
       - ./backend:/app
       - /app/node_modules

@@ -6,7 +6,6 @@ import GifGrid from './assets/components/GifGrid'
 import Pagination from './assets/components/Pagination'
 
 function App() {
-    /**const [searchTerm, setSearchTerm] = useState('')*/
     const [gifs, setGifs] = useState<never[]>([])
 
     const [currentPage, setCurrentPage] = useState(1);
@@ -21,7 +20,6 @@ function App() {
             const res = await fetch(`http://localhost:3000/api/giphy/search?query=${query}&rating=${rating}`)
             const data = await res.json()
             console.log(data)
-            /**setSearchTerm(query)*/
             setGifs(data)
         } catch (err) {
             console.error('Error fetching GIFs:', err)
